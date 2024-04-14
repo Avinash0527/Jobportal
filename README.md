@@ -17,30 +17,6 @@ Used Tech Stack
 1. Django
 2. Sqlite
 
-### Screenshots
-
-## Home page
-<img src="screenshots/one.png" height="800">
-
-## Resume template page
-<img src="screenshots/six.png" height="800">
-<img src="screenshots/seven.png" height="800">
-
-## Login page
-<img src="screenshots/five.png" height="800">
-
-## Add new position as employer
-<img src="screenshots/two.png" height="800">
-
-## Job details
-<img src="screenshots/three.png" height="800">
-
-## Swagger API
-<img src="screenshots/four.png" height="800">
-
-<a name="local-venv"></a>
-### Local environment
-
 #### Install
 
 1. Create a virtual environment
@@ -75,18 +51,20 @@ Used Tech Stack
 
 2. Create initial database:
 
-    `python manage.py migrate`
+  'python manage.py makemigrations`
+   
+    `python manage.py migrate'
 
 
-3. Load demo data (optional):
+4. Load demo data (optional):
 
     `python manage.py loaddata fixtures/app_name_initial_data.json --app app.model_name`
 
-4. Run server:
+5. Run server:
 
     `python manage.py runserver`
 
-5. Default django admin credentials:
+6. Default django admin credentials:
 
     `email: admin@admin.com`
     `password: admin`
@@ -94,6 +72,4 @@ Used Tech Stack
 #### Run test:
 ``python manage.py test``
 
-#### To dump data:
-``python manage.py dumpdata --format=json --indent 4 app_name > app_name/fixtures/app_name_initial_data.json``
 
