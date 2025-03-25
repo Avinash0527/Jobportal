@@ -21,25 +21,15 @@ Used Tech Stack
 
 1. Create a virtual environment
 
-    `virtualenv venv`
-
-    Or
-
-    `python3.8 -m venv venv`
+    `python -m venv envi`
 
 2. Activate it
 
-    `source venv/bin/activate`
+    ` envi\scripts\activate`
 
 3. Clone the repository and install the packages in the virtual env:
 
     `pip install -r requirements.txt`
-
-4. Add `.env` file.
-
-    `cp .env.dev.sample .env`
-
-5. Add Github client ID and client secret in the `.env` file
 
 #### Run
 
@@ -51,14 +41,9 @@ Used Tech Stack
 
 2. Create initial database:
 
-  'python manage.py makemigrations`
+  `python manage.py makemigrations`
    
     `python manage.py migrate'
-
-
-4. Load demo data (optional):
-
-    `python manage.py loaddata fixtures/app_name_initial_data.json --app app.model_name`
 
 5. Run server:
 
